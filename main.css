@@ -94,44 +94,37 @@ span {
 
 
 /* Introduce */
-.background-image {
-    background-image: url(img/hero.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+.caption {
+    position: absolute;
+    color: white;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    top: 38%;
 }
 
-.background-image h1 {
-    font-size: 64px;
+.caption h1 {
+    font-size: 4.8rem;
     font-weight: 700;
-    color: #2c2f3f;
-
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    text-shadow: .1rem .1rem .8rem black;
 }
 
-.background-image h4 {
-    color: #2c2f3f;
-    font-size: 34px;
-    font-family: "Poppins", sans-serif;
-
-}
-
-.background-image h3 {
-    color: #2c2f3f;
-
+.caption h3 {
+    font-size: 2.5rem;
+    text-shadow: .1rem .1rem .5rem black;
 }
 
 @media (max-width: 768px) {
-    background-image h1 {
+    .caption h1 {
         font-size: 28px;
     }
 
-    baclground-image h4,
-    h3 {
+    .caption h3 {
         font-size: 18px;
     }
+
+
 }
 
 /* About */
@@ -189,22 +182,4 @@ h2::after {
 .skill {
     margin-right: 10px;
 
-}
-
-
-.carousel-item img {
-    width: 900px;
-    height: 500px;
-}
-
-@media (max-width: 768px) {
-    .carousel-item img {
-        width: 500px;
-        height: 250px;
-    }
-}
-
-/* footer */
-footer {
-    color: #212529;
 }
